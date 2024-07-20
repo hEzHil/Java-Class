@@ -1,4 +1,4 @@
-package Oops.Inheritance;
+package Oops.SingleInheritance;
 
 public class BoxWeight extends Box{
 
