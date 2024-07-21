@@ -1,4 +1,4 @@
-package Oops.Inheritance;
+package Oops.SingleInheritance;
 
 public class Box {
     // if i use the private key word to this variable then it can be used in this class only
