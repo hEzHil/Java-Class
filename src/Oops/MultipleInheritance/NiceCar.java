@@ -7,7 +7,7 @@ public class NiceCar {
 
 
     public NiceCar() {
-        engine = new ElectricEngine();
+        engine = new PowerEngine();
     }
 
     public NiceCar(Engine engine) {
