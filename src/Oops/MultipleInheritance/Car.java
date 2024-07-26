@@ -7,6 +7,11 @@ public class Car implements Engine,Brake,Media{
     }
 
     @Override
+    public int divisor(int num) {
+        return 0;
+    }
+
+    @Override
     public void engineType() {
         System.out.println("Petrol Engine");
     }
