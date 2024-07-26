@@ -10,6 +10,7 @@ public class PowerEngine implements Engine{
             int temp = i + n;
 
         }
+        return 0;
     }
 
     @Override
