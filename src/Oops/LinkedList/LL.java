@@ -95,6 +95,18 @@ public class LL {
        }
         return null;
     }
+    public void insertRec(int val, int index){
+        head = insertRec(val,index,head);
+    }
+    private Node insertRec(int val, int index, Node node){
+        if( index ==0){
+            Node temp = new Node(val, node);
+            size++;
+            return temp;
+        }
+        node.next = insertRec(val,index-1, node.next);
+        return node;
+    }
     public void display(){
         Node temp = head;
         while( temp != null){
@@ -102,6 +114,33 @@ public class LL {
             temp = temp.next;
         }
         System.out.println("End!");
+    }
+    // merge
+    public static LL merge(LL first, LL second){
+        Node f = first.head;
+        Node s = second.head;
+
+        LL ans = new LL();
+
+        while(f != null && s != null){
+            if(f.value < s.value){
+                ans.insertLast(f.value);
+                f = f.next;
+            }
+            else {
+                ans.insertLast(s.value);
+                s = s.next;
+            }
+        }
+        while(f  != null){
+            ans.insertLast(f.value);
+            f = f.next;
+        }
+        while(s != null){
+            ans.insertLast(s.value);
+            s = s.next;
+        }
+        return ans;
     }
 
     private class Node {
@@ -119,4 +158,17 @@ public class LL {
            this.next = next;
        }
    }
+
+    public static void main(String[] args) {
+        LL list1 = new LL();
+        list1.insertLast(1);
+        list1.insertLast(3);
+        list1.insertLast(5);
+        LL list2 = new LL();
+        list2.insertLast(1);
+        list2.insertLast(2);
+        list2.insertLast(9);
+        LL ans = LL.merge(list1,list2);
+        ans.display(); 
+    }
 }
