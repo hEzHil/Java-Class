@@ -6,10 +6,26 @@ import java.util.Scanner;
 public class EvenOdd {
     public static void main(String[] args) {
         // [2,3,4,5,6,7,8,9]
-        int[] nums ={2,3,4,5,6,7,8,9};
-        int len = nums.length;
-//        evenOdd(nums,len);
-        evenOdd2(nums,len);
+//        int[] nums ={2,3,4,5,6,7,8,9};
+//        int len = nums.length;
+////        evenOdd(nums,len);
+//        evenOdd2(nums,len);
+
+        String str = "PROGRAM";
+//        System.out.println(str.length());
+        int len = str.length() -1;
+        int half = len /2;
+        StringBuilder ans = new StringBuilder() ;
+
+        for(int i =half;i<=len ;i++){
+            ans.append(str.charAt(i));
+            System.out.println(ans);
+        }
+//        System.out.println(ans);
+        for (int i =0; i< half;i++){
+           ans.append(str.charAt(i));
+            System.out.println(ans);
+        }
     }
     static int[] evenOdd2(int[] nums, int len){
         int j=0;
@@ -70,4 +86,6 @@ public class EvenOdd {
         }
         return arr;
     }
+
+
 }
