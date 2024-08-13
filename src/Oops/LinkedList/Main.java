@@ -40,7 +40,7 @@ public class Main {
 
         list.insertRec(88 ,2);
         list.display();
-
+       list.find(88);
 
 
     }
