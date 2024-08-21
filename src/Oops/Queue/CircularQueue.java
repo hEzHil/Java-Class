@@ -14,11 +14,11 @@ public class CircularQueue {
         this.data = new int[size];
     }
 
-    private boolean isFull() {
+    protected boolean isFull() {
         return size == data.length; // prt at last index
     }
 
-    private boolean isEmpty() {
+    protected boolean isEmpty() {
         return size == 0; // prt at last index
     }
 
