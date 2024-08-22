@@ -23,6 +23,7 @@ public class Main {
             vector.add(3);
         System.out.println(vector);
 
+        ArrayList<Integer> arr = new ArrayList<>();
 
 
 
