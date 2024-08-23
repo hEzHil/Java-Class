@@ -9,8 +9,8 @@ public class Main {
         // Mutable objects can be modified after they are created
         // it is thread safety
         // because of thread safety it is slow
-        // if i are working with multiple threads and need thread safety then use the StringBuffer
-        // if  u are not working with multiple thread and need to fast then use String Builder
+        // if iam  working with multiple threads and need thread safety then use the StringBuffer
+        // if  iam  not working with multiple thread and need to fast then use String Builder
         StringBuffer st = new StringBuffer();
         System.out.println(st.capacity());
         st.append(" I ");
@@ -26,7 +26,6 @@ public class Main {
         st.delete(2,5);
         String str = st.toString();
         System.out.println(str);
-        HashSet<Integer> set = new HashSet<>();
-        set.add()
+
     }
 }
