@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Vector;
 
 public class Main {
+
+    // Java collection framework  is collection of libraries for basic data structures and algorithm
     public static void main(String[] args) {
         // Here ArrayList has the implementation that List interface provides
         List<Integer> list = new ArrayList<>();
