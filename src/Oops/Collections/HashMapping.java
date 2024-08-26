@@ -14,8 +14,10 @@ public class HashMapping {
         hashMap.put(4, "Bentley");
         hashMap.put(5, "Ajay");
 
+
         // here are some methods
-        System.out.println(hashMap.get(1));
+        System.out.println(hashMap);
+
 
     }
 

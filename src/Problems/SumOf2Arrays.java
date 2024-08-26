@@ -1,6 +1,7 @@
 package Problems;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class SumOf2Arrays {
     public static void main(String[] args){
@@ -8,6 +9,7 @@ public class SumOf2Arrays {
         int B[] = {8, 4, 2};
         int ans1 = number(A);
         int ans2 = number(B);
+       
 
         int sum = ans1 + ans2;
         ArrayList<Integer> answer = new ArrayList<>();

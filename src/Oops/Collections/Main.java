@@ -1,9 +1,6 @@
 package Oops.Collections;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Vector;
+import java.util.*;
 
 public class Main {
 
@@ -13,6 +10,12 @@ public class Main {
         List<Integer> list = new ArrayList<>();
         list.add(40);
         list .add(45);
+
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+        IntSummaryStatistics stats = numbers.stream().mapToInt(x -> x).summaryStatistics();
+        System.out.println("Lowest number in list : " + stats.getMin());
+        System.out.println("Highest number in list : "+ stats.getMax());
+
 
         List<Integer> list2 = new LinkedList<>();
             list2.add(2);

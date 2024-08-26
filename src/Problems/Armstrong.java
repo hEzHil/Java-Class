@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Armstrong {
     //To find Class.Armstrong Number between two given number.
-    void armstrong(){
+   static void armstrong(){
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter a number: ");
+        System.out.print("Enter a number: ");
         int input = in.nextInt();
         int temp = input;
         int rem = 0 ;
@@ -22,5 +22,9 @@ public class Armstrong {
         else {
             System.out.println("It is not a Class.Armstrong");
         }
+    }
+
+    public static void main(String[] args) {
+        armstrong();
     }
 }

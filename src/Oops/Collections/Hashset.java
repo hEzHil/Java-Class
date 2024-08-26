@@ -1,5 +1,6 @@
 package Oops.Collections;
 
+import java.util.Arrays;
 import java.util.HashSet;
 
 public class Hashset {
@@ -10,7 +11,6 @@ public class Hashset {
         hashSet.add("apple");
         hashSet.add("Orange");
         hashSet.add("Banana");
-
         // it will not allow to store it.
         hashSet.add("apple");
         hashSet.add("Mango");

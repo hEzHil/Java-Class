@@ -6,6 +6,14 @@ import java.util.Arrays;
 public class Problem {
         public static void main(String[] args){
 
+            String name = "hello";
+            String reverse = "";
+            int len = name.length();
+            for (int i = 0; i <len; i++){
+                reverse = name.charAt(i) + reverse;
+            }
+            System.out.println(reverse);
+
 
         }
      // to find out whether the string is just one mismatch

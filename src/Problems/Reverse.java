@@ -16,4 +16,13 @@ public class Reverse {
         }
         System.out.println(ans);
     }
+
+    public static void main(String[] args) {
+        String str = "hello ezhil";
+        String ans = "";
+        for(int i =0; i < str.length(); i++){
+            ans = str.charAt(i) + ans;
+        }
+        System.out.println(ans);
+    }
 }
