@@ -2,8 +2,16 @@ package Oops.Execption;
 
 public class Main {
     public static void main(String[] args) {
+        String textBox = """
+                hi
+                hello
+                yes
+                """;
+        System.out.println(textBox);
+
         int a = 10 ;
         int b = 0;
+       
         try {
             divide(a, b);
         }

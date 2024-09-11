@@ -13,6 +13,12 @@ public class Problem {
                 reverse = name.charAt(i) + reverse;
             }
             System.out.println(reverse);
+            String str = new String("");
+            str = "ezhil";
+            String str1 = new String("");
+            str1 = "mahil";
+            System.out.println(str==str1);
+
 
 
         }

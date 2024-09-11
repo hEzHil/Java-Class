@@ -2,6 +2,10 @@ package Problems;
 
 import Problems.FindStartAndEnd;
 
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -12,6 +16,21 @@ public class Main {
        int target = 4;
       int[] ans =  findStartAndEnd.searchRange(nums, target);
         System.out.println(ans[1]);
+
+
+        String pattern = "MM-dd-yyyy";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+        String date = simpleDateFormat.format(new Date());
+        System.out.println(date); // 06-23-2020
+
+        List<Integer> list1 = new ArrayList<>();
+        list1.add(1);
+        List<Integer> list2 = new ArrayList<>();
+        list2.add(2);
+        List<Integer> mergeList = new ArrayList<>(list1);
+        mergeList.addAll(list2);
+        System.out.println(mergeList);
     }
 
 

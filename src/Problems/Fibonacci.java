@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Fibonacci {
     //To calculate Problems.Fibonacci Series up to n numbers.
-    public void fibonacci(){
+    public static  void fibonacci(){
         int a = 0, b =1;
         System.out.println("Enter the number: ");
         Scanner in = new Scanner(System.in);
@@ -16,9 +16,11 @@ public class Fibonacci {
             a = b;
             b = num;
             i++;
+            System.out.println(b);
         }
-        System.out.println(b);
+    }
 
-
+    public static void main(String[] args) {
+        fibonacci();
     }
 }
